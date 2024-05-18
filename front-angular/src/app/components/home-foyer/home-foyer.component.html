@@ -1,0 +1,18 @@
+<!-- <div class="container-fluid" style="padding: 30px;">
+    <div class="row">
+      <div *ngFor="let i of allFoyer" class="card col-md-4" style="width: 18rem; margin: 5px; background-color: #f8f9fa; border: 1px solid #ced4da; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #007bff;">{{i.nomFoyer}}</h5>
+          <p class="card-text"><strong>Capacity:</strong> {{i.capaciteFoyer}}</p>
+          <p class="card-text"><strong>Type:</strong> {{i.type}}</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<div class="container-fluid" style="padding: 30px;">
+    <div class="row">
+        <app-home-foyer-card *ngFor="let i of allFoyer" [childInput]="i"></app-home-foyer-card>
+    </div>
+</div>
+  
